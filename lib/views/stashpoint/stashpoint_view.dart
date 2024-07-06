@@ -143,12 +143,12 @@ class StashpointView extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '${stashpoint.userDistanceKm} km from your location', // Distance
-                        style: const TextStyle(
+                        '1 min. from your location', // Distance
+                        style: TextStyle(
                             fontSize: 14.0, color: Color(0xFF000000)),
                       ),
                     ],
