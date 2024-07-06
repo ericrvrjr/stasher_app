@@ -147,7 +147,7 @@ class StashpointView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '1 min. from your location', // Distance
+                        '1 min. from your location', 
                         style: TextStyle(
                             fontSize: 14.0, color: Color(0xFF000000)),
                       ),
