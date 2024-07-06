@@ -24,14 +24,17 @@ class StashpointView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFEFF8FF),
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: const Color(0xFFD1E9FF))),
-                      height: 60,
-                      width: 60,
-                      child: const Icon(Icons.smoke_free,
-                          size: 40.0, color: Colors.blue)),
+                    decoration: BoxDecoration(
+                        color: const Color(0xFFEFF8FF),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: const Color(0xFFD1E9FF))),
+                    height: 60,
+                    width: 60,
+                    child: Image.network(
+                      "${stashpoint.photos?.first}.png",
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) => const Text("Not available", style: TextStyle(color:Colors.grey),),),
+                    ),
                   const SizedBox(width: 12.0),
                   SizedBox(
                     width: 125,

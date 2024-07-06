@@ -42,7 +42,11 @@
  2. Open in VS Code (Optional):
     - If you downloaded Visual Studio Code, right-click anywhere inside the project folder and select "Open with Code" (or similar option depending on your operating system). This will open the project in VS Code, which provides a user-friendly interface for working with Flutter projects.
 
- 3. Run the App:
+ 3. Setting up the the environment variable
+    - right click .env.example and click copy then paste it where .env.example is located.
+    - rename .env.example copy to .env
+
+ 4. Run the App:
 
     - In VS Code, find the terminal window at the bottom (or create a new one). Make sure you're inside the project folder (the path should be displayed in the terminal).
     - Type the following command and press Enter:
@@ -58,7 +62,16 @@
  1. Open Terminal in Project Folder:
     If you're not using VS Code, make sure you're in the project folder using the cd command in the terminal (refer to step 3 of the "Cloning the Repository" section).
 
- 2. Run the App:
+ 2. Setting up the the environment variable
+    - If you are using windows, type:
+        ```
+        copy .env.example .env
+        ```
+    - If you are using Mac/Linux, type:
+        ```
+        cp .env.example .env
+        ```
+ 3. Run the App:
 
     - Type the following command and press Enter:
         ```
@@ -67,7 +80,7 @@
 
     - This will start the Flutter development tools and attempt to run your app on a connected device or emulator.
 
- 3. Choosing a Device or Emulator:
+ 4. Choosing a Device or Emulator:
 
     By default, Flutter will try to run the app on a connected mobile device. If no device is connected, it will ask if you want to launch an emulator (a simulated device on your computer).
     To launch an emulator, select the desired device type (e.g., Pixel 4) and operating system version (e.t., Android 13) and click "Launch" (in VS Code) or choose the appropriate option in the terminal.
