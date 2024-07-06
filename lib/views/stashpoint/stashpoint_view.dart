@@ -30,10 +30,13 @@ class StashpointView extends StatelessWidget {
                         border: Border.all(color: const Color(0xFFD1E9FF))),
                     height: 60,
                     width: 60,
-                    child: Image.network(
-                      "${stashpoint.photos?.first}.png",
-                      fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) => const Text("Not available", style: TextStyle(color:Colors.grey),),),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.network(
+                        "${stashpoint.photos?.first}",
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) => const Center(child:  Text("Not available", textAlign: TextAlign.center  , style: TextStyle(color:Colors.grey, fontSize: 10),)),),
+                    ),
                     ),
                   const SizedBox(width: 12.0),
                   SizedBox(
