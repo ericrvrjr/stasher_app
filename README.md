@@ -89,3 +89,5 @@
 
 - The first time you run flutter run, it might take some time to download additional dependencies needed for the project.
 - If you encounter any errors during the process, consult the developer who created the project for further assistance.
+
+### Extra
